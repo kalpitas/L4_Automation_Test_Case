@@ -54,6 +54,7 @@ expected_errors = {
 # Iterate over rows in the sheet
 for row_index, row in enumerate(login_sheet.iter_rows(min_row=2, max_row=login_sheet.max_row, values_only=False), start=2):
 
+    user_id_cell = row[0]
     username_cell = row[1]
     password_cell = row[2]
     testcases_cell = row[3]
