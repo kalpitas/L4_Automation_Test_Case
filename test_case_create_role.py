@@ -119,12 +119,10 @@ def test_create_role(chrome_browser):
                     labell = 9
                     ide = Audit[f'{role}']
 
-                print(ide)
-                checkbox1 = chrome_browser.find_element(By.XPATH, "//*[@id='root']/div/div/div[2]/div[2]/div/div[3]/div/div[" + str(
-                    labell) + "]/div/label[" + str(ide) + "]/span[2]")
+                #print(ide)
+                checkbox1 = chrome_browser.find_element(By.XPATH, "//*[@id='root']/div/div/div[2]/div[2]/div/div[3]/div/div[" + str(labell) + "]/div/label[" + str(ide) + "]/span[2]")
                 chrome_browser.execute_script("arguments[0].scrollIntoView()", checkbox1)
-                chrome_browser.find_element(By.XPATH, "//*[@id='root']/div/div/div[2]/div[2]/div/div[3]/div/div[" + str(
-                    labell) + "]/div/label[" + str(ide) + "]/span[2]").click()
+                chrome_browser.find_element(By.XPATH, "//*[@id='root']/div/div/div[2]/div[2]/div/div[3]/div/div[" + str(labell) + "]/div/label[" + str(ide) + "]/span[2]").click()
 
         if test_case in ("To create a role with create rights"):
 
@@ -162,7 +160,7 @@ def test_create_role(chrome_browser):
                     labell = 9
                     ide = Audit[f'{role}']
 
-                print(ide)
+                #print(ide)
                 checkbox1 = chrome_browser.find_element(By.XPATH, "//*[@id='root']/div/div/div[2]/div[2]/div/div[3]/div/div[" + str(
                     labell) + "]/div/label[" + str(ide) + "]/span[2]")
                 chrome_browser.execute_script("arguments[0].scrollIntoView()", checkbox1)
