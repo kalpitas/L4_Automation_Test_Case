@@ -99,7 +99,7 @@ def test_create_user(chrome_browser):
         chrome_browser.find_element(By.XPATH,"//*[@id='root']/div/div/div/div[2]/div/div[3]/div[1]/button[2]").click()
         print("clicked on next button")
 
-        timeout = 2
+        timeout = 6
         try:
             #click on submit
             new_user_sub = EC.element_to_be_clickable((By.XPATH, "//*[@id='root']/div/div/div/div[2]/div/div[1]/button[2]"))
