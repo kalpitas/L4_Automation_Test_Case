@@ -28,7 +28,7 @@ if type_env == "Tenant":
 
 url = url_login_cred.cell(row=2, column=1).value
 print(url)
-chrome_browser.get(str(url))
+driver.get(str(url))
 
 # Click to accept or dismiss any pop-ups
 try:
